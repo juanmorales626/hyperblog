@@ -1,0 +1,179 @@
+moral@ALIENWARE_PC MINGW64 /c/users/moral/Documents/CURSOS/proyecto1
+$ git init
+Initialized empty Git repository in C:/Users/moral/Documents/CURSOS/proyecto1/.git/
+
+moral@ALIENWARE_PC MINGW64 /c/users/moral/Documents/CURSOS/proyecto1 (master)
+$ ls -al
+total 9
+drwxr-xr-x 1 moral 197609  0 Jan 20 18:36 ./
+drwxr-xr-x 1 moral 197609  0 Jan 19 08:10 ../
+drwxr-xr-x 1 moral 197609  0 Jan 20 18:36 .git/
+-rw-r--r-- 1 moral 197609 15 Jan 19 08:16 vacio.txt
+
+moral@ALIENWARE_PC MINGW64 /c/users/moral/Documents/CURSOS/proyecto1 (master)
+$ code
+
+moral@ALIENWARE_PC MINGW64 /c/users/moral/Documents/CURSOS/proyecto1 (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        historia.txt
+        vacio.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+moral@ALIENWARE_PC MINGW64 /c/users/moral/Documents/CURSOS/proyecto1 (master)
+$ git add historia.txt
+
+moral@ALIENWARE_PC MINGW64 /c/users/moral/Documents/CURSOS/proyecto1 (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   historia.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        vacio.txt
+
+
+moral@ALIENWARE_PC MINGW64 /c/users/moral/Documents/CURSOS/proyecto1 (master)
+$ git commit -m "Este es el primer commit del archivo"
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'moral@ALIENWARE_PC.(none)')
+
+moral@ALIENWARE_PC MINGW64 /c/users/moral/Documents/CURSOS/proyecto1 (master)
+$ git config --global user.name "Juan Morales"
+
+moral@ALIENWARE_PC MINGW64 /c/users/moral/Documents/CURSOS/proyecto1 (master)
+$ git config --global user.email "moralesjuan626@gmail.com"
+
+moral@ALIENWARE_PC MINGW64 /c/users/moral/Documents/CURSOS/proyecto1 (master)
+$ git config --list
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+http.sslbackend=openssl
+http.sslcainfo=C:/Program Files/Git/mingw64/ssl/certs/ca-bundle.crt
+core.autocrlf=true
+core.fscache=true
+core.symlinks=false
+credential.helper=manager
+winupdater.recentlyseenversion=2.25.0.windows.1
+user.name=Juan Morales
+user.email=moralesjuan626@gmail.com
+core.repositoryformatversion=0
+core.filemode=false
+core.bare=false
+core.logallrefupdates=true
+core.symlinks=false
+core.ignorecase=true
+
+moral@ALIENWARE_PC MINGW64 /c/users/moral/Documents/CURSOS/proyecto1 (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   historia.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        vacio.txt
+
+
+moral@ALIENWARE_PC MINGW64 /c/users/moral/Documents/CURSOS/proyecto1 (master)
+$ git commit -m "Este es el primer commit del archivo"
+[master (root-commit) 5f41656] Este es el primer commit del archivo
+ 1 file changed, 5 insertions(+)
+ create mode 100644 historia.txt
+
+moral@ALIENWARE_PC MINGW64 /c/users/moral/Documents/CURSOS/proyecto1 (master)
+$ cat historia.txt
+Esta es la historia de Juan
+
+Juan tiene 34 y nacio en Colombia
+
+Hoy hablaremos de su historia
+moral@ALIENWARE_PC MINGW64 /c/users/moral/Documents/CURSOS/proyecto1 (master)
+$ code historia.txt
+
+moral@ALIENWARE_PC MINGW64 /c/users/moral/Documents/CURSOS/proyecto1 (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   historia.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        vacio.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+moral@ALIENWARE_PC MINGW64 /c/users/moral/Documents/CURSOS/proyecto1 (master)
+$ git commit -m "Cambios al archivo de historia para cambiar la edad"
+On branch master
+Changes not staged for commit:
+        modified:   historia.txt
+
+Untracked files:
+        vacio.txt
+
+no changes added to commit
+
+moral@ALIENWARE_PC MINGW64 /c/users/moral/Documents/CURSOS/proyecto1 (master)
+$ git add .
+
+moral@ALIENWARE_PC MINGW64 /c/users/moral/Documents/CURSOS/proyecto1 (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   historia.txt
+        new file:   vacio.txt
+
+
+moral@ALIENWARE_PC MINGW64 /c/users/moral/Documents/CURSOS/proyecto1 (master)
+$ git commit -m "Cambios al archivo de historia para cambiar la edad"
+[master 1df292a] Cambios al archivo de historia para cambiar la edad
+ 2 files changed, 3 insertions(+), 1 deletion(-)
+ create mode 100644 vacio.txt
+
+moral@ALIENWARE_PC MINGW64 /c/users/moral/Documents/CURSOS/proyecto1 (master)
+$ git log historia.txt
+commit 1df292a27a31227a934bb4a603d4fa9487ac158e (HEAD -> master)
+Author: Juan Morales <moralesjuan626@gmail.com>
+Date:   Mon Jan 20 18:58:40 2020 -0500
+
+    Cambios al archivo de historia para cambiar la edad
+
+commit 5f41656eb5c8bc9354ccd830d17b726ee8580f20
+Author: Juan Morales <moralesjuan626@gmail.com>
+Date:   Mon Jan 20 18:54:56 2020 -0500
+
+    Este es el primer commit del archivo
+
+moral@ALIENWARE_PC MINGW64 /c/users/moral/Documents/CURSOS/proyecto1 (master)
