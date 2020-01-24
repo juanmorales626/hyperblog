@@ -5,6 +5,12 @@ el mundo
 
 Hoy hablaremos de su historia
 
+<<<<<<< HEAD
 En camara parece alto, pero la verdad no es tan alto.
 
 Hablaremos tambien de su vida y obra maestra
+=======
+Actualmente vive en Nueva York
+
+Paro quiere conocer otras partes del mundo
+>>>>>>> cabecera
