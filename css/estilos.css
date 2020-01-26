@@ -2,9 +2,9 @@ body {
 
     color:deeppink;
     text-align: center;
-    font-family: 'Courier New', Courier, monospace, Helvetica, sans-serif;
+    font-family: 'Arial', Courier, monospace, Helvetica, sans-serif;
 }
 p {
     text-align: center;
-    background: grey;
+    background: yellow;
 }
