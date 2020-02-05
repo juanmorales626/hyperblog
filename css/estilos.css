@@ -43,8 +43,9 @@ body {
     font-size: 36px;
 }
 
-#post
-{
-    background: white;
-    padding: 1em;
+#footer {
+    background: #777;
+    color: white;
+    text-align: center;
+    padding: 0.5rem;
 }
