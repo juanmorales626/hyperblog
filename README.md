@@ -6,3 +6,4 @@ Un blog increible para el curso de Git y GitHub de Platzi
 * El flujo de trabajo de GitHub
 * El verdadero amor por las buenas practicas
 * Incluye ejemplos en Windows, Linux y Mac
+* Trucos muy locos del profe
